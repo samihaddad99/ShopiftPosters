@@ -1,1 +1,1 @@
-web: trap '' SIGTERM; puma -C 'cd ./api && npm start' & 'cd ../client && npm start' -n; kill -SIGTERM -$$; wait
+web: trap '' SIGTERM; puma -C 'cd ./api && npm start' & 'cd ./client && npm start' -n; kill -SIGTERM -$$; wait
