@@ -20,7 +20,7 @@ export default function Projects() {
       <Carousel className="crsl-cont">
       {/* Calculator App */}
       <Carousel.Item className="lastName">
-        <a href="https://github.com/samihaddad99/CalculatorApplication"><img alt="Calculator Application Preview" src={require("../CalculatorAppPreview.png")} /></a>
+        <a href="https://github.com/samihaddad99/CalculatorApplication"><img alt="Calculator Application Preview" src={require("./imgs/CalculatorAppPreview.png")} /></a>
         <Carousel.Caption >
           <div className="cap-text-cont">
           <h3>Calculator Application <Badge>C#/UWP</Badge></h3>
@@ -30,7 +30,7 @@ export default function Projects() {
       </Carousel.Item>
       {/* Pong App */}
       <Carousel.Item>
-        <a href="https://github.com/samihaddad99/Pong"><img className="d-block w-100" alt="Pong Application Preview" src={require("../PongApplicationPreview.png")} /></a>
+        <a href="https://github.com/samihaddad99/Pong"><img className="d-block w-100" alt="Pong Application Preview" src={require("./imgs/PongApplicationPreview.png")} /></a>
         <Carousel.Caption >
           <div className="cap-text-cont">
           <h3>Pong Application <Badge>Python/Turtle</Badge></h3>
@@ -40,7 +40,7 @@ export default function Projects() {
       </Carousel.Item>
       {/* Backend App */}
       <Carousel.Item>
-        <a href="https://github.com/samihaddad99/ShopifyCrud"><img  alt="Backend Application Preview" src={require("../BackendChallengePreview.png")} /></a>
+        <a href="https://github.com/samihaddad99/ShopifyCrud"><img  alt="Backend Application Preview" src={require("./imgs/BackendChallengePreview.png")} /></a>
         <Carousel.Caption >
           <div className="cap-text-cont">
           <h3>Backend Application <Badge>Java/SpringBoot</Badge></h3>
@@ -50,7 +50,7 @@ export default function Projects() {
       </Carousel.Item>
       {/* Webcam Tracking */}
       <Carousel.Item>
-        <a id="imgLink" href="https://github.com/samihaddad99/WebcamTracking"><img alt="Webcam Application Preview" src={require("../WebcamTrackingPreview.png")} /></a>
+        <a id="imgLink" href="https://github.com/samihaddad99/WebcamTracking"><img alt="Webcam Application Preview" src={require("./imgs/WebcamTrackingPreview.png")} /></a>
         <Carousel.Caption >
           <div className="cap-text-cont">
           <h3>Webcam Tracking Application <Badge>C#/WPF</Badge></h3>
