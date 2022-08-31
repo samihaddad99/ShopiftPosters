@@ -1,1 +1,1 @@
-web: trap '' SIGTERM; npm start -C 'cd ./api' & 'cd ./client' -n; kill -SIGTERM -$$; wait
+web: sh -c 'cd ./api && npm start'
