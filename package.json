@@ -1,0 +1,19 @@
+{
+  "name": "react-express-app",
+  "version": "1.0.0",
+  "description": "��<\u0000h\u00001\u0000>\u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000m\u0000y\u0000 \u0000p\u0000e\u0000r\u0000s\u0000o\u0000n\u0000a\u0000l\u0000 \u0000w\u0000e\u0000b\u0000s\u0000i\u0000t\u0000e\u0000 \u0000m\u0000a\u0000d\u0000e\u0000 \u0000w\u0000i\u0000t\u0000h\u0000 \u0000P\u0000E\u0000R\u0000N\u0000 \u0000s\u0000t\u0000a\u0000c\u0000k\u0000 \u0000(\u0000P\u0000o\u0000s\u0000t\u0000g\u0000r\u0000e\u0000s\u0000q\u0000l\u0000,\u0000 \u0000E\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000,\u0000 \u0000R\u0000e\u0000a\u0000c\u0000t\u0000,\u0000 \u0000N\u0000o\u0000d\u0000e\u0000)\u0000<\u0000/\u0000h\u00001\u0000>\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samihaddad99/PERNWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samihaddad99/PERNWebsite/issues"
+  },
+  "homepage": "https://github.com/samihaddad99/PERNWebsite#readme"
+}
