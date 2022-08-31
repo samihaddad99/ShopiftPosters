@@ -1,0 +1,202 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.body-style {
+  height: 100vh;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  font-weight: initial;
+  line-height: 1.5;
+  color: #333; 
+  -webkit-font-smoothing: antialiased;
+  background-color: #F2F2F2;
+  overflow: hidden;
+  font-family: "Roboto",sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Old Button styles... */
+/* Nav {
+  width:100vw;
+  background-color:aquamarine;
+} */
+Nav > ul {
+  list-style:none;
+  display:flex;
+  direction: ltr;
+  flex-direction: row;
+  padding-right: 3em;
+  justify-content: space-between;
+}
+
+/* 
+** Start Carousel Styling 
+*/
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color:#2a9d8f;
+  box-shadow: 5px;
+  border-radius: 25%;
+}
+
+.crsl-cont {
+  height:60vh;
+  width:60vh;
+  margin: auto;
+  /* width: 50%; */
+  padding: 10px;
+} 
+
+.crsl-cont img {
+  height:60vh;
+  width:60vh;
+}
+
+.Carousel.Caption > h3 {
+  font-size:0.5em;
+}
+
+.cap-text-cont {
+  background-color:#2a9d8f;
+  opacity: 70%;
+  border-radius: 1em;
+}
+
+/* 
+** End Carousel Styling 
+*/
+
+
+.btn-container {
+  justify-content: space-evenly;
+}
+
+Button {
+  width:calc(1/4*100vw);
+}
+
+footer {
+  width:100vw;
+}
+
+.hint {
+  color:#588157;
+  font-style: italic;
+  margin-top:1em;
+}
+
+.BodyText {
+  padding: 3em;
+  width:50%;
+  color:#264653;
+  display:inline-flexbox;
+  flex-wrap: wrap;
+  margin:auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 0.4em solid black;
+  box-shadow: 5px 10px #888888;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 1px;
+  margin:auto;
+  left:calc(50% - 11.5em);
+  color:#2a9d8f;
+}
+
+.pfp {
+  /* clip-path: circle(); */
+  border-radius: 100%;
+  /* left:200px; */
+  float:left;
+  /* shape-outside:url("./pfp.png"); */
+  /* shape-outside:margin-box; */
+  shape-margin: 10px;
+  display: block;
+  box-shadow: -2px 5px #d1fae5;
+  width: 30%;
+  height: 30%;
+  max-width: 200px;
+}
+
+.center
+{
+  text-align: center;
+}
+
+p > a {
+  color:#3a5a40;
+}
+
+p {
+  margin:10px;
+}
+
+form button {
+  border: 1px solid black;
+}
+
+form button:hover {
+  background-color: #2a9d8f;
+}
+
+input[type=text], input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex Button {
+  width:5vw;
+  margin-right:1em;
+  background-color: #38a3a5;
+  border:#264653;
+}
+
+.buttons {
+  width: 150px;
+  display: flex;
+  padding-top:12px;
+  padding-right:10px;
+}
+
+.tab-content {
+  height: 100%;
+}
+
+.tabpanel {
+  height: 100%;
+
+}
+
+h2 {
+  padding-left:1em;
+  padding-top:0.5em;
+}
