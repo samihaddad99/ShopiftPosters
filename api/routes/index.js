@@ -26,9 +26,9 @@ app.get('/', (req, res) => {
   })
 })
 
-app.get('/favicon.ico', (req,res) => {
-  console.log("icon recieved");
-})
+// app.get('/favicon.ico', (req,res) => {
+//   console.log("icon recieved");
+// })
 
 app.post('/merchants', (req, res) => {
   merchant_model.createMerchant(req.body)
