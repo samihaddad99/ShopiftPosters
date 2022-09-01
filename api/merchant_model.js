@@ -3,11 +3,23 @@
  */
 
 const { Pool } = require('pg')
+
+// heroku pool
+// const isProduction = process.env.NODE_ENV === "production";
+// const connectionString = `postgresql://${process.env.PG_USER}:${process.env.PG_PASSWORD}@${process.env.PG_HOST}:${process.env.PG_PORT}/${process.env.PG_DATABASE}`;
+// const pool = new Pool({
+//   connectionString: isProduction
+//     ? process.env.DATABASE_URL // Heroku will supply us with a string called DATABASE_URL for the connectionString,
+//     : connectionString,
+//   ssl: isProduction ? { rejectUnauthorized: false } : false,
+// });
+
+// local pool
 const pool = new Pool({
-  user: 'wcjhynnaqmsqcv',
-  host: 'ec2-3-224-184-9.compute-1.amazonaws.com',
-  database: 'd77crid3676g7k',
-  password: '783eaa68521049e261224a5c47187b0d2790f0328c31f386e34a2f977aab4e52',
+  user: 'nglyfwwl',
+  host: 'heffalump.db.elephantsql.com',
+  database: 'nglyfwwl',
+  password: 'VgEsZXQmoxonCtdAw9xXgMNEJdeeLBQt',
   port: 5432,
 });
 
