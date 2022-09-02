@@ -16,7 +16,8 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get('/', (req, res) => {
+// changed all 'app' to 'router'
+router.get('/', (req, res) => {
   merchant_model.getMerchants()
   .then(response => {
     res.status(200).send(response);
@@ -26,11 +27,7 @@ app.get('/', (req, res) => {
   })
 })
 
-// app.get('/favicon.ico', (req,res) => {
-//   console.log("icon recieved");
-// })
-
-app.post('/merchants', (req, res) => {
+router.post('/merchants', (req, res) => {
   merchant_model.createMerchant(req.body)
   .then(response => {
     res.status(200).send(response);
@@ -40,7 +37,7 @@ app.post('/merchants', (req, res) => {
   })
 })
 
-app.delete('/merchants/:id', (req, res) => {
+router.delete('/merchants/:id', (req, res) => {
   merchant_model.deleteMerchant(req.params.id)
   .then(response => {
     res.status(200).send(response);
@@ -50,7 +47,7 @@ app.delete('/merchants/:id', (req, res) => {
   })
 })
 
-app.put('/merchants/:id', (req, res) => {
+router.put('/merchants/:id', (req, res) => {
   console.log("calling update merchant");
   merchant_model.updateMerchant(req.params.id, req.body)
   .then(response => {
@@ -61,7 +58,7 @@ app.put('/merchants/:id', (req, res) => {
   // })
 })
 
-app.listen(port, () => {
+router.listen(port, () => {
   console.log(`App running on port ${port}.`)
 })
 
