@@ -13,7 +13,8 @@ export default function AboutMe() {
         <p className=" BodyText text-2xl">
           
           <img className="pfp" width="300" height="300" src={require('./imgs/pfp.png')} alt="Me"></img>
-          Hello and Welcome to my PERN (Postgresql/Express/React/Node) stack website website!
+          Hello and Welcome to my PERN (Postgresql/Express/React/Node) stack website!
+          Feel free to play around with the Database (from the tabs above).
           My name is Sami Haddad
           I'm an under-graduate student
           currently attending Sheridan College at the Software Development
