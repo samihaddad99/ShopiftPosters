@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 
 export default function Database() {
 
-    /* const [merchants, setMerchants] = useState(false);
+    const [merchants, setMerchants] = useState(false);
     const backend = "https://pernstack-backend.herokuapp.com/";
 
     useEffect(() => {
@@ -127,6 +127,5 @@ export default function Database() {
         </Table>
         </div>
     </div>
-    ) */
-    return (<div>under progress...</div>)
+    )
 }
