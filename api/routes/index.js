@@ -7,8 +7,13 @@ var router = express.Router();
 const app = express()
 const port = 3001
 const merchant_model = require('../merchant_model') // import the merchant functions
+const cors = require("cors");
+const morgan = require("morgan");
 
+app.use(morgan("dev"));
 app.use(express.json());
+app.use(cors());
+
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
@@ -17,7 +22,9 @@ app.use(function (req, res, next) {
 });
 
 // changed all 'app' to 'router'
-router.get('/', (req, res) => {
+app
+.route('/')
+.get((req, res) => {
   merchant_model.getMerchants()
   .then(response => {
     res.status(200).send(response);
@@ -27,7 +34,9 @@ router.get('/', (req, res) => {
   })
 })
 
-router.post('/merchants', (req, res) => {
+app
+.route('/merchants')
+.post((req, res) => {
   merchant_model.createMerchant(req.body)
   .then(response => {
     res.status(200).send(response);
@@ -37,7 +46,9 @@ router.post('/merchants', (req, res) => {
   })
 })
 
-router.delete('/merchants/:id', (req, res) => {
+app
+.route('/merchants/:id')
+.delete( (req, res) => {
   merchant_model.deleteMerchant(req.params.id)
   .then(response => {
     res.status(200).send(response);
@@ -47,7 +58,9 @@ router.delete('/merchants/:id', (req, res) => {
   })
 })
 
-router.put('/merchants/:id', (req, res) => {
+app
+.route('/merchants/:id')
+.put((req, res) => {
   console.log("calling update merchant");
   merchant_model.updateMerchant(req.params.id, req.body)
   .then(response => {
@@ -58,7 +71,7 @@ router.put('/merchants/:id', (req, res) => {
   // })
 })
 
-router.listen(port, () => {
+app.listen(port, () => {
   console.log(`App running on port ${port}.`)
 })
 
