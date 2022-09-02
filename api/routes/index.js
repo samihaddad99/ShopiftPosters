@@ -5,7 +5,7 @@
 const express = require('express');
 var router = express.Router();
 const app = express()
-const port = 3001
+const PORT = process.env.PORT || 3001;
 const merchant_model = require('../merchant_model') // import the merchant functions
 const cors = require("cors");
 const morgan = require("morgan");
@@ -71,8 +71,8 @@ app
   // })
 })
 
-app.listen(port, () => {
-  console.log(`App running on port ${port}.`)
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}.`)
 })
 
 // implement merchant table routing
