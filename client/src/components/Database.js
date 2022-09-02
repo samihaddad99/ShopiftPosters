@@ -13,13 +13,14 @@ import Button from "react-bootstrap/Button";
 export default function Database() {
 
     const [merchants, setMerchants] = useState(false);
+    const backend = "https://pernstack-backend.herokuapp.com/";
 
     useEffect(() => {
         getMerchant();
     }, []);
 
     function getMerchant() {
-        fetch('http://localhost:3001')
+        fetch(`${backend}`)
           .then(response => {
             return response.text();
           })
@@ -32,7 +33,7 @@ export default function Database() {
         let name = prompt('Enter merchant name');
         let email = prompt('Enter merchant email');
 
-        fetch('http://localhost:3001/merchants', {
+        fetch(`${backend}merchants`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +52,7 @@ export default function Database() {
       function deleteMerchant(id) {
         // let id = prompt('Enter merchant id');
 
-        fetch(`http://localhost:3001/merchants/${id}`, {
+        fetch(`${backend}merchants/${id}`, {
           method: 'DELETE',
         })
           .then(response => {
@@ -70,7 +71,7 @@ export default function Database() {
 
         // console.log(id);
 
-        fetch(`http://localhost:3001/merchants/${id}`, {
+        fetch(`${backend}merchants/${id}`, {
           
           headers: {
             'Content-Type': 'application/json',
