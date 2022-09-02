@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.541336b3.css",
+    "main.js": "/static/js/main.13a09850.js",
+    "static/media/pfp.png": "/static/media/pfp.84c3f1ab2fdedf8164f0.png",
+    "static/media/WebcamTrackingPreview.png": "/static/media/WebcamTrackingPreview.23f9d2a44bc808d24176.png",
+    "static/media/BackendChallengePreview.png": "/static/media/BackendChallengePreview.e5f4baa5d84292701bdd.png",
+    "static/media/CalculatorAppPreview.png": "/static/media/CalculatorAppPreview.8d0fca3433d82f6bb58f.png",
+    "static/media/PongApplicationPreview.png": "/static/media/PongApplicationPreview.e2db8e38b8527f9cdef7.png",
+    "index.html": "/index.html",
+    "main.541336b3.css.map": "/static/css/main.541336b3.css.map",
+    "main.13a09850.js.map": "/static/js/main.13a09850.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.541336b3.css",
+    "static/js/main.13a09850.js"
+  ]
+}
