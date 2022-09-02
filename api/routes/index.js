@@ -21,7 +21,9 @@ app.use(cors());
 //   next();
 // });
 
-router.get("/", function(req, res, next) {
+app
+.route("/")
+.get(async function(req, res, next) {
   res.send("API is working properly");
 });
 
