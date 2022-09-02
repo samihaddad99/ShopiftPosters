@@ -21,17 +21,20 @@ app.use(cors());
 //   next();
 // });
 
+router.get("/", function(req, res, next) {
+  res.send("API is working properly");
+});
+
 // changed all 'app' to 'router'
-app
-.route('/')
-.get((req, res) => {
-  // merchant_model.getMerchants()
-  return ("working get")
-  // .catch(error => {
-  //   res.status(500).send(error);
-  // })
-  console.log("get / call");
-})
+// app
+// .route('/')
+// .get((req, res) => {
+//   merchant_model.getMerchants()
+//   .catch(error => {
+//     res.status(500).send(error);
+//   })
+//   console.log("get / call");
+// })
 
 app
 .route('/merchants')
