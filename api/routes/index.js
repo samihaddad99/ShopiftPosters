@@ -26,9 +26,7 @@ app
 .route('/')
 .get((req, res) => {
   // merchant_model.getMerchants()
-  // .then(response => {
-  //   res.status(200).send(response);
-  // })
+  return ("working get")
   // .catch(error => {
   //   res.status(500).send(error);
   // })
