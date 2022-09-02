@@ -24,18 +24,24 @@ app.use(cors());
 app
 .route("/")
 .get(async function(req, res, next) {
-  res.send("API is working properly");
+  merchant_model.getMerchants()
+  .then(response => {
+    res.status(200).send(response);
+  })
+  .catch(error => {
+    res.status(500).send(error);
+  })
 });
 
 // changed all 'app' to 'router'
 // app
 // .route('/')
 // .get((req, res) => {
-//   merchant_model.getMerchants()
-//   .catch(error => {
-//     res.status(500).send(error);
-//   })
-//   console.log("get / call");
+  // merchant_model.getMerchants()
+  // .catch(error => {
+  //   res.status(500).send(error);
+  // })
+  // console.log("get / call");
 // })
 
 app
